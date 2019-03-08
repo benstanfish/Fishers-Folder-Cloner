@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.CopyPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TargetPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CloseButton = new System.Windows.Forms.Button();
             this.RunButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.CopyPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TargetPath = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,18 +56,6 @@
             this.dgv.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellDoubleClick);
             this.dgv.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellValueChanged);
             this.dgv.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgv_KeyDown);
-            // 
-            // CopyPath
-            // 
-            this.CopyPath.HeaderText = "Folder to Clone";
-            this.CopyPath.Name = "CopyPath";
-            this.CopyPath.Width = 367;
-            // 
-            // TargetPath
-            // 
-            this.TargetPath.HeaderText = "Target Folder";
-            this.TargetPath.Name = "TargetPath";
-            this.TargetPath.Width = 367;
             // 
             // CloseButton
             // 
@@ -111,6 +99,18 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Note: Rows with cells left empty will not be copied.";
             // 
+            // CopyPath
+            // 
+            this.CopyPath.HeaderText = "Folder to Clone";
+            this.CopyPath.Name = "CopyPath";
+            this.CopyPath.Width = 367;
+            // 
+            // TargetPath
+            // 
+            this.TargetPath.HeaderText = "Destination Folder";
+            this.TargetPath.Name = "TargetPath";
+            this.TargetPath.Width = 367;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,10 +138,10 @@
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button RunButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CopyPath;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TargetPath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CopyPath;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TargetPath;
     }
 }
 
